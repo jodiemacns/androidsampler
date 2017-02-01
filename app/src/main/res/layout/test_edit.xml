@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="right"
+            android:id="@+id/imgcmdtesteditbutton" />
+
+        <TextClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:id="@+id/textClock"
+            android:layout_below="@+id/imgcmdtesteditbutton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="normal|bold"
+            android:textSize="30sp" />
+
+        <CheckBox
+            android:text="ON or OFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textClock"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/checkBoxTextEdit" />
+
+        <TextView
+            android:text="Check box Status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkBoxTextEdit"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="17dp"
+            android:id="@+id/textViewCheckedStatus" />
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="39dp"
+            android:layout_marginEnd="39dp"
+            android:layout_marginTop="18dp"
+            android:id="@+id/numberPickerTestEdit" />
+
+        <TextView
+            android:text="Number Chosen:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewCheckedStatus"
+            android:layout_alignRight="@+id/imgcmdtesteditbutton"
+            android:layout_alignEnd="@+id/imgcmdtesteditbutton"
+            android:layout_marginTop="56dp"
+            android:id="@+id/textViewNumberChosenTestEdit"
+            android:contentDescription="Number Chosen:" />
+    </RelativeLayout>
+</LinearLayout>

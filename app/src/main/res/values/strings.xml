@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lacedemy</string>
+    <string-array name="formtypes">
+        <item>To do list</item>
+        <item>Text Editing</item>
+        <item>List Of stuff</item>
+    </string-array>
+</resources>
